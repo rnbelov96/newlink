@@ -1,0 +1,84 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Rubik', sans-serif;
+  line-height: normal;
+}
+
+main {
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1148px;
+  margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    padding: 0 30px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 0 15px;
+  }
+
+  &_footer {
+    max-width: 1920px;
+
+    @media (max-width: 1710px) {
+      max-width: 1148px;
+    }
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.stop-scrolling {
+  overflow: hidden;
+  height: 100%;
+}
+
+.callback {
+  @include reset-btn;
+  width: 183px;
+  height: 183px;
+  @include bg;
+  background-image: url('/src/img/callback.png');
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  z-index: 3;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+
+  @media (max-width: 1500px) {
+    right: 20px;
+  }
+
+  @media (max-width: 767px) {
+    width: 120px;
+    height: 120px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  @media (max-width: 575px) {
+    width: 90px;
+    height: 90px;
+  }
+}

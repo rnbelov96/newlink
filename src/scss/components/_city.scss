@@ -1,0 +1,76 @@
+.city {
+  min-height: 635px;
+  padding-top: 55px;
+  padding-bottom: 75px;
+  @include bg;
+  background-image: url('/src/img/bgs/city-bg.jpg');
+
+  @media (max-width: 991px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.city__title {
+  font-size: 51.5px;
+  font-weight: 600;
+  color: $blue;
+  margin-bottom: 48px;
+  @include max-width(920px);
+  position: relative;
+
+  &::before {
+    content: url('/src/img/balloon.png');
+    position: absolute;
+    right: -701px;
+    top: -24px;
+
+    @media (max-width: 1200px) {
+      content: none;
+    }
+  }
+
+  @media (max-width: 991px) {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  span {
+    color: $red;
+  }
+}
+
+.city__text {
+  font-size: 22px;
+  line-height: 38px;
+  font-weight: 500;
+  margin-bottom: 50px;
+
+  @media (max-width: 1000px) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 16px;
+  }
+
+  span {
+    color: $red;
+  }
+}

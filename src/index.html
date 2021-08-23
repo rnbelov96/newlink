@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Франшиза «Newlink»</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.5.2/validator.min.js"
+      integrity="sha512-vZEoK8xRncku4g5GANHh5zobUjeCMbZkSEahrADeAcRlk/1Ignf8sAKojkV4RZLkPw145+ILJFisI2pnjsPtGQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.0.7/imask.min.js"
+      integrity="sha512-qCt/OTd55ilhuXLRNAp/G8uONXUrpFoDWsXDtyjV4wMbvh46dOEjvHZyWkvnffc6I2g/WHSKsaFUCm0RISxnzQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.map&lang=ru-RU"></script>
+  </head>
+  <body>
+    <button class="callback js-callback"></button>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__content">
+          <button class="nav__hamburger js-ham-anchor"></button>
+          <ul class="nav__list js-menu-anchor">
+            <li data-list-number="0" class="nav__item">о рынке</li>
+            <li data-list-number="1" class="nav__item">потенциальный заработок</li>
+            <li data-list-number="2" class="nav__item">10 направлений поддержки</li>
+            <li data-list-number="3" class="nav__item">отзывы о Newlink</li>
+          </ul>
+          <a href="tel:+78000000000" class="nav__phone">8 800 000 00 00</a>
+          <a href="tel:+78000000000" class="nav__phone-btn"></a>
+        </div>
+        <ul class="nav__list nav__list_drop js-menu-anchor-drop">
+          <li data-list-number="0" class="nav__item">о рынке</li>
+          <li data-list-number="1" class="nav__item">потенциальный заработок</li>
+          <li data-list-number="2" class="nav__item">10 направлений поддержки</li>
+          <li data-list-number="3" class="nav__item">отзывы о Newlink</li>
+        </ul>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <button class="header__hamburger js-ham-top"></button>
+          <img
+            src="./img/icons/logo.png"
+            alt="Логотип компании"
+            class="header__logo"
+          />
+          <ul class="header__list js-menu-top">
+            <li data-list-number="0" class="header__item">о рынке</li>
+            <li data-list-number="1" class="header__item">потенциальный заработок</li>
+            <li data-list-number="2" class="header__item">10 направлений поддержки</li>
+            <li data-list-number="3" class="header__item">отзывы о Newlink</li>
+          </ul>
+          <a href="tel:+78000000000" class="header__phone">8 800 000 00 00</a>
+          <a href="tel:+78000000000" class="header__phone-btn"></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="desc">
+        <div class="container">
+          <h1 class="desc__title">
+            <span>Языковая школа по франшизе:</span><br />
+            открытие, найм персонала <br />
+            и еще 8 направлений поддержки
+          </h1>
+          <p class="desc__text">
+            Поможем открыть и вести бизнес, <br />
+            <span>
+              научим монетизировать ваши знания английского <br />
+              и зарабатывать от 320&nbsp;000 до 360&nbsp;000 рублей в месяц
+            </span>
+          </p>
+          <div class="desc__list-box">
+            <ul class="desc__list">
+              <li class="desc__item">
+                Поможем <br />
+                открыть <br />
+                вашу школу <br />
+                за 2,5 недели
+              </li>
+              <li class="desc__item">
+                Проводим обучение <br />
+                и аттестацию <br />
+                преподавателей <br />
+                каждые 3 года <br />
+                в «Cambridge Delta»
+              </li>
+              <li class="desc__item">
+                Снабдим <br />
+                вашу школу <br />
+                необходимыми <br />
+                учебниками <br />
+                по выгодным ценам
+              </li>
+            </ul>
+            <button class="button button_materials js-callback">
+              ПОЛУЧИТЬ МАТЕРИАЛЫ
+            </button>
+            <img
+              src="./img/owner.png"
+              alt="Основательница школы"
+              class="desc__owner"
+            />
+          </div>
+          <form class="line-form line-form_desc">
+            <h3 class="line-form__title">
+              Оставьте заявку и получите подробные материалы франшизы
+            </h3>
+            <div class="line-form__input-list">
+              <input
+                type="text"
+                placeholder="имя"
+                name="name"
+                data-type="name"
+                class="line-form__input"
+              /><input
+                type="text"
+                placeholder="телефон"
+                name="phone"
+                data-type="phone"
+                class="line-form__input"
+              /><input
+                type="email"
+                placeholder="email"
+                name="email"
+                data-type="email"
+                class="line-form__input"
+              />
+              <div class="line-form__btn-box">
+                <button class="button button_line-form">
+                  ПОЛУЧИТЬ <br />
+                  МАТЕРИАЛЫ
+                </button>
+                <img
+                  src="./img/icons/form-book.png"
+                  class="line-form__book-img"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="study">
+        <div class="container">
+          <h2 class="study__title">
+            <span>Родители годами вкладываются в изучение</span> своими детьми
+            иностранных языков
+          </h2>
+          <div class="study__content">
+            <p class="study__text">
+              <b
+                >Ниша обучения английскому языку удерживает стабильно высокий
+                спрос на рынке.</b
+              >
+              За период январь 2019-декабрь 2020 «Яндекс.Wordstat» фиксировал до
+              200 000 запросов ежемесячно. Языки развивают мышление и речь
+              учеников, дают преимущества в будущем: престижный вуз, место
+              работы, сотрудничество с зарубежными компаниями.
+            </p>
+            <p class="study__text">
+              <b>Родители записывают детей на занятия с 3-х лет.</b> Они готовы
+              инвестировать в знания, которые обеспечат ребёнку хорошую
+              успеваемость, сдачу ОГЭ и ЕГЭ, перспективное будущее, высокий
+              заработок. Для достижения базового уровня английского требуется от
+              200 часов занятий, для уверенного владения языком — от 700.
+            </p>
+            <p class="study__note">
+              Это значит, что ученик, который посещает занятие 2 раза в неделю и
+              имеет цель владеть английским на уверенном уровне, будет вашим
+              клиентом не менее 2 лет.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="convert">
+        <div class="container">
+          <h2 class="convert__title">
+            <span>«Newlink»: знаем,</span> как конвертировать знания английского
+            языка в прибыль
+          </h2>
+          <p class="convert__text">
+            Наша языковая школа <span>9 лет обучает английскому</span> детей
+            разных возрастов.
+          </p>
+          <ul class="convert__list">
+            <li class="convert__item">
+              От 90 aдо 140 новых учеников выбирают «Newlink» ежегодно для
+              повышения уровня знаний и подготовки к экзаменам.
+            </li>
+            <li class="convert__item">
+              Занятия проходят в офлайн-формате индивидуально или коллективно.
+            </li>
+            <li class="convert__item">
+              Методики преподавания актуализируются для каждого ребёнка и
+              группы.
+            </li>
+            <li class="convert__item">
+              Выпускники поступают <br />
+              в ведущие вузы страны.
+            </li>
+          </ul>
+          <p class="convert__note">
+            Мы стали лидером <span>в своём регионе</span> — последуйте и вы
+            нашему примеру.
+          </p>
+        </div>
+      </section>
+
+      <section class="exp">
+        <div class="container">
+          <h2 class="exp__title">
+            <span>Опыт мировых вузов —</span> <br />
+            конкурентное преимущество «Newlink»
+          </h2>
+          <p class="exp__text">
+            Программы разработаны на основе методик признанных университетов
+            мира: «Delta», «Cambridge English», «Macmillan Education», «Pearson
+            English Interactive».
+          </p>
+          <ul class="exp__list">
+            <li class="exp__item">
+              Ученики от 3 до 17 лет любого уровня владения языком найдут для
+              себя новые знания: обучаем детей с нуля; для учеников с базовыми
+              знаниями есть группы с усиленным погружением в язык; также мы
+              готовим будущих выпускников к экзаменам ОГЭ и ЕГЭ .
+            </li>
+            <li class="exp__item">
+              Преподаватели постепенно формируют языковой потенциал детей и
+              проверяют их готовность перейти к более сложному этапу.
+            </li>
+            <li class="exp__item">
+              Дополнительно нас отличает от других школ организация очного
+              общения учащихся с носителями языка из Британии, США и Канады.
+            </li>
+          </ul>
+          <p class="exp__note">
+            Основательность, использование мирового опыта, поступательность —
+            это то, что вызывает у родителей доверие и желание привести ребёнка
+            в «Newlink». Присоединяйтесь к нашей сети школ и развивайте
+            процветающий бизнес.
+          </p>
+          <form class="line-form">
+            <h3 class="line-form__title">
+              Оставьте заявку и получите подробные материалы франшизы
+            </h3>
+            <div class="line-form__input-list">
+              <input
+                type="text"
+                placeholder="имя"
+                name="name"
+                data-type="name"
+                class="line-form__input"
+              /><input
+                type="text"
+                placeholder="телефон"
+                name="phone"
+                data-type="phone"
+                class="line-form__input"
+              /><input
+                type="email"
+                placeholder="email"
+                name="email"
+                data-type="email"
+                class="line-form__input"
+              />
+              <div class="line-form__btn-box">
+                <button class="button button_line-form">
+                  ПОЛУЧИТЬ <br />
+                  МАТЕРИАЛЫ
+                </button>
+                <img
+                  src="./img/icons/form-book.png"
+                  class="line-form__book-img"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="formats">
+        <div class="container">
+          <h2 class="formats__title">
+            <span>3 направления в 2-х форматах обучения:</span>
+            индивидуальные и групповые занятия
+          </h2>
+          <div class="formats__content">
+            <div class="formats__direct">
+              <p class="formats__direct-number">1 направление</p>
+              <p class="formats__direct-note">
+                Индивидуальное обучение английскому языку детей разных возрастов
+              </p>
+              <ul class="formats__list">
+                <li class="formats__item">
+                  Занятия с преподавателем от <b>1</b> часа подойдут ребёнку от
+                  3 до 17 лет.
+                </li>
+                <li class="formats__item">
+                  Средний чек: от <b>750</b> до <b>850</b> рублей.
+                </li>
+                <li class="formats__item">
+                  Выручка с занятия: от <b>750</b> до <b>850</b> рублей.
+                </li>
+                <li class="formats__item">
+                  Маржинальность: от <b>52</b> до <b>64</b>%.
+                </li>
+              </ul>
+            </div>
+            <div class="formats__direct">
+              <p class="formats__direct-number">2 направление</p>
+              <p class="formats__direct-note">
+                Обучение английскому языку детей от 3 до 17 лет в больших
+                группах
+              </p>
+              <ul class="formats__list">
+                <li class="formats__item">
+                  Объединяем учеников по возрастам и уровню подготовки в группы
+                  до <b>10</b> человек.
+                </li>
+                <li class="formats__item">
+                  Средний чек: от <b>300</b> до <b>400</b> рублей.
+                </li>
+                <li class="formats__item">
+                  Выручка с занятия: от <b>3000</b> до <b>4000</b> рублей.
+                </li>
+                <li class="formats__item">
+                  Маржинальность: от <b>72</b> до <b>82</b>%.
+                </li>
+              </ul>
+            </div>
+            <div class="formats__direct">
+              <p class="formats__direct-number">3 направление</p>
+              <p class="formats__direct-note">
+                Обучение английскому языку детей от 3 до 17 лет в малых группах
+              </p>
+              <ul class="formats__list">
+                <li class="formats__item">
+                  Объединяем учеников по возрастам и уровню подготовки в группы
+                  до <b>4</b> человек.
+                </li>
+                <li class="formats__item">
+                  Средний чек: от <b>500</b> до <b>600</b> рублей.
+                </li>
+                <li class="formats__item">
+                  Выручка с занятия: от <b>2000</b> до <b>2400</b> рублей.
+                </li>
+                <li class="formats__item">
+                  Маржинальность: от <b>72</b> до <b>82</b>%.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="math">
+        <div class="container">
+          <h2 class="math__title">
+            <span>Математика прибыли:</span> <br />
+            из чего складывается доход «Newlink»
+          </h2>
+          <ul class="math__list">
+            <li class="math__item">
+              <img src="./img/icons/math/1.png" class="math__item-img" />
+              <p class="math__item-text">Средняя выручка в месяц:</p>
+              <p class="math__item-number">
+                от <b>550&nbsp;000</b> до <b>600&nbsp;000</b> рублей.
+              </p>
+            </li>
+            <li class="math__item">
+              <img src="./img/icons/math/2.png" class="math__item-img" />
+              <p class="math__item-text">Посещаемость:</p>
+              <p class="math__item-number">
+                от <b>90</b> до <b>140</b> чел./мес.
+              </p>
+            </li>
+            <li class="math__item">
+              <img src="./img/icons/math/3.png" class="math__item-img" />
+              <p class="math__item-text">Средняя чистая прибыль в месяц:</p>
+              <p class="math__item-number">
+                от <b>330&nbsp;000</b> до <b>360&nbsp;000</b> рублей.
+              </p>
+            </li>
+            <li class="math__item">
+              <img src="./img/icons/math/4.png" class="math__item-img" />
+              <p class="math__item-text">Окупаемость:</p>
+              <p class="math__item-number">от <b>4</b> до <b>6</b> месяцев.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="calc">
+        <div class="container">
+          <h2 class="calc__title">
+            <span>Рассчитайте финансовые выгоды</span> языковой школы
+          </h2>
+          <div class="calc__content">
+            <div class="calc__calc-box">
+              <div class="calc__input-box">
+                <p class="calc__input-label">Индивидуальные занятия</p>
+                <input
+                  type="range"
+                  min="10"
+                  max="20"
+                  step="2"
+                  class="calc__input js-range js-single-range"
+                />
+                <div class="calc__endpoints">
+                  <div class="calc__endpoint">10</div>
+                  <div class="calc__endpoint">20</div>
+                </div>
+              </div>
+              <div class="calc__input-box">
+                <p class="calc__input-label">Учеников в маленьких группах</p>
+                <input
+                  type="range"
+                  min="20"
+                  max="30"
+                  step="2"
+                  class="calc__input js-range js-litle-range"
+                />
+                <div class="calc__endpoints">
+                  <div class="calc__endpoint">20</div>
+                  <div class="calc__endpoint">30</div>
+                </div>
+              </div>
+              <div class="calc__input-box">
+                <p class="calc__input-label">Учеников в больших группах</p>
+                <input
+                  type="range"
+                  min="40"
+                  max="60"
+                  step="4"
+                  class="calc__input js-range js-big-range"
+                />
+                <div class="calc__endpoints">
+                  <div class="calc__endpoint">40</div>
+                  <div class="calc__endpoint">60</div>
+                </div>
+              </div>
+              <p class="calc__result">
+                ИТОГО:
+                <span
+                  ><span class="js-calc-result">450 000</span> рублей в
+                  месяц</span
+                >
+              </p>
+            </div>
+            <form class="modal-form">
+              <h3 class="modal-form__title">
+                Оставьте заявку и получите подробные материалы франшизы
+              </h3>
+              <div class="modal-form__input-list">
+                <input
+                  type="text"
+                  placeholder="имя"
+                  name="name"
+                  data-type="name"
+                  class="modal-form__input"
+                /><input
+                  type="text"
+                  placeholder="телефон"
+                  name="phone"
+                  data-type="phone"
+                  class="modal-form__input"
+                /><input
+                  type="email"
+                  placeholder="email"
+                  name="email"
+                  data-type="email"
+                  class="modal-form__input"
+                />
+                <div class="modal-form__btn-box">
+                  <button class="button button_modal-form">
+                    ЗАФИКСИРОВАТЬ ПРИБЫЛЬ
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="reasons">
+        <div class="container">
+          <h2 class="reasons__title">
+            <span
+              >Подойдёт новичкам в бизнесе <br />
+              и опытным предпринимателям — <br
+            /></span>
+            вам достаточно знать язык
+          </h2>
+          <p class="reasons__text">
+            Стоит открыть языковую школу «Newlink», если вы:
+          </p>
+          <ul class="reasons__list">
+            <li class="reasons__item">
+              <img
+                src="./img/gallery/reasons/1.png"
+                class="reasons__item-img"
+              />
+              <p class="reasons__item-text">
+                <span>Репетитор.</span> <br />
+                Объединяйтесь с единомышленниками, чтобы делиться опытом,
+                делегировать обязанности и зарабатывать больше, чем в частной
+                практике.
+              </p>
+            </li>
+            <li class="reasons__item">
+              <img
+                src="./img/gallery/reasons/2.png"
+                class="reasons__item-img"
+              />
+              <p class="reasons__item-text">
+                <span
+                  >Не преподаете язык, но владеете знаниями английского.</span
+                >
+                <br />
+                Вам достаточно быть целеустремлённым человеком и владеть
+                иностранным языком — мы поможем открыть вашу школу под ключ и
+                научим ведению бизнеса.
+              </p>
+            </li>
+            <li class="reasons__item">
+              <img
+                src="./img/gallery/reasons/3.png"
+                class="reasons__item-img"
+              />
+              <p class="reasons__item-text">
+                <span>Опытный предприниматель из сферы образования.</span>
+                <br />Отличный вариант для расширения собственного
+                образовательного проекта в сторону обучения английскому свою
+                аудиторию. Годы практики дают конкурентное преимущество. чем в
+                частной практике.
+              </p>
+            </li>
+            <li class="reasons__item">
+              <img
+                src="./img/gallery/reasons/4.png"
+                class="reasons__item-img"
+              />
+              <p class="reasons__item-text">
+                <span>Преподаватель в школе.</span> Настало время работать на
+                себя — используйте возможность. Вы специалист в обоих
+                направлениях «Newlink», работе с родителями и методиками —
+                коллективу нашей школы нужны такие франчайзи.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="key">
+        <div class="container">
+          <h2 class="key__title">
+            Откройте бизнес под ключ с «Newlink» —
+            <span> научим монетизировать ваши знания английского </span>
+          </h2>
+          <p class="key__note">
+            Вы получите <b>9 направлений поддержки</b> от открытия школы до
+            поиска клиентов и далее:
+          </p>
+          <ul class="key__list">
+            <li class="key__item">
+              <b>Посвящение в миссию, ценности и долгосрочные цели.</b> Узнаете
+              обо всех внутренних процессах, стратегиях развития и
+              первоочерёдных задачах. Так вы будете развиваться вместе с нами и
+              наращивать свои финансовые результаты.
+            </li>
+            <li class="key__item">
+              <b>Поиск и аренда помещения.</b> Подберём место для школы: с
+              учетом оптимального размера площади, которая вместит всех
+              учеников; без офисных работников, алкомаркетов или интим товаров
+              по соседству; с возможностью повесить вывеску и режимник и другим
+              параметрам.
+            </li>
+            <li class="key__item">
+              <b>Закупка мебели и оборудования.</b> Учебные классы требуют
+              особенного внимания к мебели и зонированию. Проконсультируем,
+              какую мебель выбрать: большие круглые столы или парты, какие
+              стеллажи нужны для учебников, обустройство рабочих мест
+              преподавателей и администраторов и т.д..
+            </li>
+            <li class="key__item">
+              <b>Учебники от поставщиков ГК.</b> Качество учебников напрямую
+              влияет на уровень восприятия материала учениками. Мы обучаем и
+              закупаем учебные пособия по стандартам «Delta», «Cambridge
+              English», «Macmillan Education», «Pearson English Interactive». Вы
+              получите все учебники по выгодным ценам напрямую от нас.
+            </li>
+            <li class="key__item">
+              <b>Подключение к Битрикс24 ГК.</b> История обучения постоянных
+              учеников, заявки от новых абитуриентов, история переговоров с
+              родителями, общие задачи между учителями — этот массив данных вы
+              сможете хранить в единой системе Bitrix24. Мы подключим вас к
+              центральному акаунту и она будет для вас бесплатной.
+            </li>
+            <li class="key__item">
+              <b>Полная юридическая и бухгалтерская поддержка.</b> Подключим к
+              чату с штатным юристом для оперативного решения любых вопросов:
+              составление индивидуальных договоров между вами и родителями
+              учеников, решение споров с поставщиками и арендаторами, решение
+              любых форс-мажорных ситуаций.
+            </li>
+            <li class="key__item">
+              <b>Консультация по бухглатерскому сопровождению. </b>
+              Проведём консультации по ведению бухгалтерского учёта. Предупредим
+              по подготовке ежеквартальной отчётности для государственных
+              органов и планированию расходов для оплаты налогов и пенсионных
+              взносах.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="help">
+        <div class="container">
+          <h2 class="help__title">
+            Желаете расти?
+            <span>Научим находить преподавательский и делегировать</span>
+          </h2>
+          <p class="help__note">
+            Преподавательский состав «Newlink» тщательно отбирается. Мы
+            совместно пройдём весь путь поиска учителей при первичном найме и
+            будем консультировать по их поиску в дальнейшей работе:
+          </p>
+          <ul class="help__list">
+            <li class="help__item">
+              Передадим описания вакансий с перечислением всех необходимых
+              компетенций: понимание стандартов, уровней и тестов CEFR, знание
+              современных подходов и методологий преподавания английского языка
+              и ещё 6 необходимых компетенций.
+            </li>
+            <li class="help__item">
+              Проконсультируем по оценке резюме и подскажем, как на этом этапе
+              выделить кандидатов с реальным практическим опытом: подробность
+              описания выполняемых задач, наличие сертификатов «IELTS», «Delta»
+              и «TOEFL» и т.д.
+            </li>
+            <li class="help__item">
+              Поможем провести первые собеседования. На практике посмотрите, как
+              оценить уровень устного и письменного владения языком, изучим
+              портфолио и уточним технические детали, которые встречаются только
+              на практике.
+            </li>
+            <li class="help__item">
+              Обучим новых учителей стандартам преподавания по методикам
+              «Delta», «Cambridge English», «Macmillan Education», «Pearson
+              English Interactive».
+            </li>
+            <li class="help__item">
+              Каждые 3 года проводим обучение и экзаменацию преподавательского
+              состава по стандартам «IELTS», «Delta» и «TOEFL». У вас будут на
+              руках их сертификаты, которые покажут уровень школы потенциальным
+              покупателям.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="materials">
+        <div class="container">
+          <h2 class="materials__title">
+            Предоставим рекламные материалы
+            <span>и займёмся привлечением клиентов</span>
+          </h2>
+          <p class="materials__note">
+            Мы исследовали рынок и подобрали каналы продвижения для удержания
+            лидерских позиций. Маркетинговые вопросы решаем вместе с вами:
+          </p>
+          <ul class="materials__list">
+            <li class="materials__item">
+              <p class="materials__item-text">
+                Разрабатываем маркетинговую стратегию продвижения услуг в вашем
+                городе.
+              </p>
+            </li>
+            <li class="materials__item">
+              <p class="materials__item-text">
+                Высылаем рекламные материалы для открытия школы, а также
+                презентации учебных программ ученикам и родителям.
+              </p>
+            </li>
+            <li class="materials__item">
+              <p class="materials__item-text">
+                Создаём аккаунты в соцсетях для продвижения в регионе партнёра.
+              </p>
+            </li>
+            <li class="materials__item">
+              <p class="materials__item-text">
+                Продвигаем вашу школу через сайт и страницы ГК в соц. сетях.
+              </p>
+            </li>
+          </ul>
+          <p class="materials__text">
+            Вам будут доступны консультации по созданию и запуску кампаний.
+          </p>
+          <p class="materials__text">
+            Доверяйте экспертному мнению и получайте клиентов.
+          </p>
+        </div>
+      </section>
+
+      <section class="secrets">
+        <div class="container">
+          <h2 class="secrets__title">
+            <span>Знаем секреты</span> повышения летнего спроса
+          </h2>
+          <p class="secrets__note">
+            Спрос на дополнительное образование в летний период снижается.
+            «Newlink» адаптируется к изменениям рынка: мы заблаговременно
+            учитываем предстоящие издержки и неровность спроса образовательных
+            услуг в течение года.
+          </p>
+          <p class="secrets__text">Чтобы избежать этого:</p>
+          <ul class="secrets__list">
+            <li class="secrets__item">
+              Грамотно выстраиваем ценообразование, а высокая рентабельность на
+              уровне 50-60% в течение 9 учебных месяцев компенсируют простой в
+              июне.
+            </li>
+            <li class="secrets__item">
+              Предоставляем скидки, разрабатываем новые программы и рекламные
+              кампании чтобы привести новых клиентов уже в июле и августе до
+              начала учебного года.
+            </li>
+          </ul>
+          <form class="line-form">
+            <h3 class="line-form__title line-form__title_secrets">
+              Будьте вне конкуренции с «Newlink». Сильный бренд ищет достойных
+              партнёров
+            </h3>
+            <div class="line-form__input-list">
+              <input
+                type="text"
+                placeholder="имя"
+                name="name"
+                data-type="name"
+                class="line-form__input"
+              /><input
+                type="text"
+                placeholder="телефон"
+                name="phone"
+                data-type="phone"
+                class="line-form__input"
+              /><input
+                type="email"
+                placeholder="email"
+                name="email"
+                data-type="email"
+                class="line-form__input"
+              />
+              <div class="line-form__btn-box">
+                <button class="button button_without-img">
+                  СТАТЬ ПАРТНЕРОМ
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="slider">
+        <div class="container">
+          <h2 class="slider__title">
+            Родители и ученики <br />
+            <span>о языковой школе «Newlink»</span>
+          </h2>
+
+          <div class="slider__slider-box">
+            <div class="slider__wrapper">
+              <div class="slider__img-box">
+                <div class="slider__img-item">
+                  <p class="slider__name">Мария</p>
+                  <p class="slider__text">
+                    Мне нравится школа Newlink потому, что мы учимся английскому
+                    в игровой форме, узнаем новые слова и выражения. Уроки
+                    проходят весело и интересно, в Newlinkочень уютно! Директор
+                    и все учителя замечательные и очень красивые! В учебниках
+                    интересные тексты и темы, намного интереснее, чем в школе. Я
+                    немного расстроилась, когда узнала, что нужно будет делать
+                    домашку, но задания в тетради не сложные и помогают
+                    повторить урок. Школьный английский я стала делать быстрее.
+                    Благодаря занятиям в Newlink я стала более уверенной.
+                    Спасибо!
+                  </p>
+                </div>
+                <div class="slider__img-item">
+                  <p class="slider__name">Мария</p>
+                  <p class="slider__text">
+                    Мне нравится школа Newlink потому, что мы учимся английскому
+                    в игровой форме, узнаем новые слова и выражения. Уроки
+                    проходят весело и интересно, в Newlinkочень уютно! Директор
+                    и все учителя замечательные и очень красивые! В учебниках
+                    интересные тексты и темы, намного интереснее, чем в школе. Я
+                    немного расстроилась, когда узнала, что нужно будет делать
+                    домашку, но задания в тетради не сложные и помогают
+                    повторить урок. Школьный английский я стала делать быстрее.
+                    Благодаря занятиям в Newlink я стала более уверенной.
+                    Спасибо!
+                  </p>
+                </div>
+                <div class="slider__img-item">
+                  <p class="slider__name">Мария</p>
+                  <p class="slider__text">
+                    Мне нравится школа Newlink потому, что мы учимся английскому
+                    в игровой форме, узнаем новые слова и выражения. Уроки
+                    проходят весело и интересно, в Newlinkочень уютно! Директор
+                    и все учителя замечательные и очень красивые! В учебниках
+                    интересные тексты и темы, намного интереснее, чем в школе. Я
+                    немного расстроилась, когда узнала, что нужно будет делать
+                    домашку, но задания в тетради не сложные и помогают
+                    повторить урок. Школьный английский я стала делать быстрее.
+                    Благодаря занятиям в Newlink я стала более уверенной.
+                    Спасибо!
+                  </p>
+                </div>
+                <div class="slider__img-item">
+                  <p class="slider__name">Мария</p>
+                  <p class="slider__text">
+                    Мне нравится школа Newlink потому, что мы учимся английскому
+                    в игровой форме, узнаем новые слова и выражения. Уроки
+                    проходят весело и интересно, в Newlinkочень уютно! Директор
+                    и все учителя замечательные и очень красивые! В учебниках
+                    интересные тексты и темы, намного интереснее, чем в школе. Я
+                    немного расстроилась, когда узнала, что нужно будет делать
+                    домашку, но задания в тетради не сложные и помогают
+                    повторить урок. Школьный английский я стала делать быстрее.
+                    Благодаря занятиям в Newlink я стала более уверенной.
+                    Спасибо!
+                  </p>
+                </div>
+
+                <div class="slider__img-item">
+                  <p class="slider__name">Мария</p>
+                  <p class="slider__text">
+                    Мне нравится школа Newlink потому, что мы учимся английскому
+                    в игровой форме, узнаем новые слова и выражения. Уроки
+                    проходят весело и интересно, в Newlinkочень уютно! Директор
+                    и все учителя замечательные и очень красивые! В учебниках
+                    интересные тексты и темы, намного интереснее, чем в школе. Я
+                    немного расстроилась, когда узнала, что нужно будет делать
+                    домашку, но задания в тетради не сложные и помогают
+                    повторить урок. Школьный английский я стала делать быстрее.
+                    Благодаря занятиям в Newlink я стала более уверенной.
+                    Спасибо!
+                  </p>
+                </div>
+                <div class="slider__img-item">
+                  <p class="slider__name">Мария</p>
+                  <p class="slider__text">
+                    Мне нравится школа Newlink потому, что мы учимся английскому
+                    в игровой форме, узнаем новые слова и выражения. Уроки
+                    проходят весело и интересно, в Newlinkочень уютно! Директор
+                    и все учителя замечательные и очень красивые! В учебниках
+                    интересные тексты и темы, намного интереснее, чем в школе. Я
+                    немного расстроилась, когда узнала, что нужно будет делать
+                    домашку, но задания в тетради не сложные и помогают
+                    повторить урок. Школьный английский я стала делать быстрее.
+                    Благодаря занятиям в Newlink я стала более уверенной.
+                    Спасибо!
+                  </p>
+                </div>
+                <div class="slider__img-item">
+                  <p class="slider__name">Мария</p>
+                  <p class="slider__text">
+                    Мне нравится школа Newlink потому, что мы учимся английскому
+                    в игровой форме, узнаем новые слова и выражения. Уроки
+                    проходят весело и интересно, в Newlinkочень уютно! Директор
+                    и все учителя замечательные и очень красивые! В учебниках
+                    интересные тексты и темы, намного интереснее, чем в школе. Я
+                    немного расстроилась, когда узнала, что нужно будет делать
+                    домашку, но задания в тетради не сложные и помогают
+                    повторить урок. Школьный английский я стала делать быстрее.
+                    Благодаря занятиям в Newlink я стала более уверенной.
+                    Спасибо!
+                  </p>
+                </div>
+
+                <div class="slider__img-item">
+                  <p class="slider__name">Мария</p>
+                  <p class="slider__text">
+                    Мне нравится школа Newlink потому, что мы учимся английскому
+                    в игровой форме, узнаем новые слова и выражения. Уроки
+                    проходят весело и интересно, в Newlinkочень уютно! Директор
+                    и все учителя замечательные и очень красивые! В учебниках
+                    интересные тексты и темы, намного интереснее, чем в школе. Я
+                    немного расстроилась, когда узнала, что нужно будет делать
+                    домашку, но задания в тетради не сложные и помогают
+                    повторить урок. Школьный английский я стала делать быстрее.
+                    Благодаря занятиям в Newlink я стала более уверенной.
+                    Спасибо!
+                  </p>
+                </div>
+                <div class="slider__img-item">
+                  <p class="slider__name">Мария</p>
+                  <p class="slider__text">
+                    Мне нравится школа Newlink потому, что мы учимся английскому
+                    в игровой форме, узнаем новые слова и выражения. Уроки
+                    проходят весело и интересно, в Newlinkочень уютно! Директор
+                    и все учителя замечательные и очень красивые! В учебниках
+                    интересные тексты и темы, намного интереснее, чем в школе. Я
+                    немного расстроилась, когда узнала, что нужно будет делать
+                    домашку, но задания в тетради не сложные и помогают
+                    повторить урок. Школьный английский я стала делать быстрее.
+                    Благодаря занятиям в Newlink я стала более уверенной.
+                    Спасибо!
+                  </p>
+                </div>
+                <div class="slider__img-item">
+                  <p class="slider__name">Мария</p>
+                  <p class="slider__text">
+                    Мне нравится школа Newlink потому, что мы учимся английскому
+                    в игровой форме, узнаем новые слова и выражения. Уроки
+                    проходят весело и интересно, в Newlinkочень уютно! Директор
+                    и все учителя замечательные и очень красивые! В учебниках
+                    интересные тексты и темы, намного интереснее, чем в школе. Я
+                    немного расстроилась, когда узнала, что нужно будет делать
+                    домашку, но задания в тетради не сложные и помогают
+                    повторить урок. Школьный английский я стала делать быстрее.
+                    Благодаря занятиям в Newlink я стала более уверенной.
+                    Спасибо!
+                  </p>
+                </div>
+                <div class="slider__img-item">
+                  <p class="slider__name">Мария</p>
+                  <p class="slider__text">
+                    Мне нравится школа Newlink потому, что мы учимся английскому
+                    в игровой форме, узнаем новые слова и выражения. Уроки
+                    проходят весело и интересно, в Newlinkочень уютно! Директор
+                    и все учителя замечательные и очень красивые! В учебниках
+                    интересные тексты и темы, намного интереснее, чем в школе. Я
+                    немного расстроилась, когда узнала, что нужно будет делать
+                    домашку, но задания в тетради не сложные и помогают
+                    повторить урок. Школьный английский я стала делать быстрее.
+                    Благодаря занятиям в Newlink я стала более уверенной.
+                    Спасибо!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__btns-box">
+              <button class="slider__btn-prev"></button
+              ><button class="slider__btn-next"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="city">
+        <div class="container">
+          <h2 class="city__title">
+            <span>Проверьте свободен ли ваш город,</span> для работы по франшизе
+          </h2>
+          <p class="city__text">
+            Проработанный маркетинг, воронка продаж, которая работает в
+            «несезон», <br />
+            помощь в открытии школы — всё это, и не только, предлагаеn Вам
+            франшиза Newlink. <br />
+            <span>Оставляйте заявку и мы обсудим Ваш план открытия школы.</span>
+          </p>
+          <form class="line-form line-form_city">
+            <div class="line-form__input-list">
+              <input
+                type="text"
+                placeholder="имя"
+                name="name"
+                data-type="name"
+                class="line-form__input"
+              /><input
+                type="text"
+                placeholder="телефон"
+                name="phone"
+                data-type="phone"
+                class="line-form__input"
+              /><input
+                type="email"
+                placeholder="email"
+                name="email"
+                data-type="email"
+                class="line-form__input"
+              />
+              <div class="line-form__btn-box">
+                <button class="button button_city button_without-img">
+                  ПРОВЕРИТЬ ГОРОД
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container container_footer">
+        <div class="footer__content">
+          <img
+            src="./img/logo-footer.png"
+            alt="Логотип компании"
+            class="footer__logo"
+          />
+          <div class="footer__center-box">
+            <div class="footer__text-box">
+              <p class="footer__name">ИП Иванов Иван Иванович</p>
+              <address class="footer__address">
+                АДРЕС; г. Москва, ул. Зеленая, д.12
+              </address>
+              <button class="footer__policy js-policy">
+                ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
+              </button>
+            </div>
+            <div class="footer__socials">
+              <a href="#" class="footer__social"></a
+              ><a href="#" class="footer__social"></a>
+            </div>
+            <a href="https://франчайзинг5.рф" class="footer__franch">
+              ФРАНЧАЙЗИНГ5 <br />
+              УПАКОВКА И ПРОДВИЖЕНИЕ <br />
+              ФРАНШИЗ</a
+            >
+          </div>
+          <div class="footer__contact-box">
+            <a href="tel:+" class="footer__phone">8 800 000 00 00</a
+            ><button class="footer__callback js-callback">
+              Заказать звонок
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal__center-wrapper">
+        <form class="modal-form">
+          <h3 class="modal-form__title">
+            Оставьте заявку и получите подробные материалы франшизы
+          </h3>
+          <div class="modal-form__input-list">
+            <input
+              type="text"
+              placeholder="имя"
+              name="name"
+              data-type="name"
+              class="modal-form__input"
+            /><input
+              type="text"
+              placeholder="телефон"
+              name="phone"
+              data-type="phone"
+              class="modal-form__input"
+            /><input
+              type="email"
+              placeholder="email"
+              name="email"
+              data-type="email"
+              class="modal-form__input"
+            />
+            <div class="modal-form__btn-box">
+              <button class="button button_modal-form">
+                ПОЛУЧИТЬ МАТЕРИАЛЫ
+              </button>
+            </div>
+          </div>
+          <button
+            data-modal-close=""
+            class="modal__close"
+            title="Закрыть"
+            type="button"
+          ></button>
+        </form>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="priv-policy priv-policy_modal">
+        <h2 class="priv-policy__title">Политика конфиденциальности</h2>
+        <h3 class="priv-policy__subtitle">1. Общие положения</h3>
+        <p class="priv-policy__text">
+          Настоящая политика обработки персональных данных составлена в
+          соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ
+          «О персональных данных» и определяет порядок обработки персональных
+          данных и меры по обеспечению безопасности персональных данных.
+        </p>
+
+        <ol class="priv-policy__list">
+          <li class="priv-policy__item">
+            1. Оператор ставит своей важнейшей целью и условием осуществления
+            своей деятельности соблюдение прав и свобод человека и гражданина
+            при обработке его персональных данных, в том числе защиты прав на
+            неприкосновенность частной жизни, личную и семейную тайну.
+          </li>
+          <li class="priv-policy__item">
+            2. Настоящая политика Оператора в отношении обработки персональных
+            данных (далее – Политика) применяется ко всей информации, которую
+            Оператор может получить о посетителях веб-сайта компании «Hot
+            Chiken».
+          </li>
+        </ol>
+
+        <h3 class="priv-policy__subtitle">
+          2. Основные понятия, используемые в Политике
+        </h3>
+
+        <ol class="priv-policy__list">
+          <li class="priv-policy__item">
+            1. Автоматизированная обработка персональных данных – обработка
+            персональных данных с помощью средств вычислительной техники;
+          </li>
+          <li class="priv-policy__item">
+            2. Блокирование персональных данных – временное прекращение
+            обработки персональных данных (за исключением случаев, если
+            обработка необходима для уточнения персональных данных);
+          </li>
+          <li class="priv-policy__item">
+            3. Веб-сайт – совокупность графических и информационных материалов,
+            а также программ для ЭВМ и баз данных, обеспечивающих их доступность
+            в сети интернет по сетевому адресу
+          </li>
+          <li class="priv-policy__item">
+            4. Информационная система персональных данных — совокупность
+            содержащихся в базах данных персональных данных, и обеспечивающих их
+            обработку информационных технологий и технических средств;
+          </li>
+          <li class="priv-policy__item">
+            5. Обезличивание персональных данных — действия, в результате
+            которых невозможно определить без использования дополнительной
+            информации принадлежность персональных данных конкретному
+            Пользователю или иному субъекту персональных данных;
+          </li>
+          <li class="priv-policy__item">
+            6. Обработка персональных данных – любое действие (операция) или
+            совокупность действий (операций), совершаемых с использованием
+            средств автоматизации или без использования таких средств с
+            персональными данными, включая сбор, запись, систематизацию,
+            накопление, хранение, уточнение (обновление, изменение), извлечение,
+            использование, передачу (распространение, предоставление, доступ),
+            обезличивание, блокирование, удаление, уничтожение персональных
+            данных;
+          </li>
+          <li class="priv-policy__item">
+            7. Оператор – государственный орган, муниципальный орган,
+            юридическое или физическое лицо, самостоятельно или совместно с
+            другими лицами организующие и (или) осуществляющие обработку
+            персональных данных, а также определяющие цели обработки
+            персональных данных, состав персональных данных, подлежащих
+            обработке, действия (операции), совершаемые с персональными данными;
+          </li>
+          <li class="priv-policy__item">
+            8. Персональные данные – любая информация, относящаяся прямо или
+            косвенно к определенному или определяемому Пользователю веб-сайта;
+          </li>
+          <li class="priv-policy__item">
+            9. Пользователь – любой посетитель веб-сайта;
+          </li>
+          <li class="priv-policy__item">
+            10. Предоставление персональных данных – действия, направленные на
+            раскрытие персональных данных определенному лицу или определенному
+            кругу лиц;
+          </li>
+          <li class="priv-policy__item">
+            11. Распространение персональных данных – любые действия,
+            направленные на раскрытие персональных данных неопределенному кругу
+            лиц (передача персональных данных) или на ознакомление с
+            персональными данными неограниченного круга лиц, в том числе
+            обнародование персональных данных в средствах массовой информации,
+            размещение в информационно-телекоммуникационных сетях или
+            предоставление доступа к персональным данным каким-либо иным
+            способом;
+          </li>
+          <li class="priv-policy__item">
+            12. Трансграничная передача персональных данных – передача
+            персональных данных на территорию иностранного государства органу
+            власти иностранного государства, иностранному физическому или
+            иностранному юридическому лицу;
+          </li>
+          <li class="priv-policy__item">
+            13. Уничтожение персональных данных – любые действия, в результате
+            которых персональные данные уничтожаются безвозвратно с
+            невозможностью дальнейшего восстановления содержания персональных
+            данных в информационной системе персональных данных и (или)
+            результате которых уничтожаются материальные носители персональных
+            данных.
+          </li>
+        </ol>
+
+        <h3 class="priv-policy__subtitle">
+          3. Оператор может обрабатывать следующие персональные данные
+          Пользователя
+        </h3>
+
+        <ol class="priv-policy__list">
+          <li class="priv-policy__item">1. Фамилия, имя, отчество;</li>
+          <li class="priv-policy__item">2. Номер телефона;</li>
+          <li class="priv-policy__item">3. Адрес электронной почты;</li>
+          <li class="priv-policy__item">
+            4. Также на сайте происходит сбор и обработка обезличенных данных о
+            посетителях (в т.ч. файлов «cookie») с помощью сервисов
+            интернет-статистики (Яндекс Метрика и Гугл Аналитика и других).
+          </li>
+          <li class="priv-policy__item">
+            5. Вышеперечисленные данные далее по тексту Политики объединены
+            общим понятием Персональные данные.
+          </li>
+        </ol>
+
+        <h3 class="priv-policy__subtitle">
+          4. Цели обработки персональных данных
+        </h3>
+
+        <ol class="priv-policy__list">
+          <li class="priv-policy__item">
+            1. Цель обработки персональных данных Пользователя — заключение,
+            исполнение и прекращение гражданско-правовых договоров;
+            предоставление доступа Пользователю к сервисам, информации и/или
+            материалам, содержащимся на веб-сайте; уточнение деталей обращения.
+          </li>
+          <li class="priv-policy__item">
+            2. Также Оператор имеет право направлять Пользователю уведомления о
+            новых продуктах и услугах, специальных предложениях и различных
+            событиях. Пользователь всегда может отказаться от получения
+            информационных сообщений, направив Оператору письмо на адрес
+            электронной почты с доменом hotchicken18@yandex.ru с пометкой «Отказ
+            от уведомлений о новых продуктах и услугах и специальных
+            предложениях».
+          </li>
+          <li class="priv-policy__item">
+            3. Обезличенные данные Пользователей, собираемые с помощью сервисов
+            интернет-статистики, служат для сбора информации о действиях
+            Пользователей на сайте, улучшения качества сайта и его содержания.
+          </li>
+        </ol>
+
+        <h3 class="priv-policy__subtitle">
+          5. Правовые основания обработки персональных данных
+        </h3>
+
+        <ol class="priv-policy__list">
+          <li class="priv-policy__item">
+            1. Оператор обрабатывает персональные данные Пользователя только в
+            случае их заполнения и/или отправки Пользователем самостоятельно
+            через специальные формы, расположенные на сайте. Заполняя
+            соответствующие формы и/или отправляя свои персональные данные
+            Оператору, Пользователь выражает свое согласие с данной Политикой.
+          </li>
+          <li class="priv-policy__item">
+            2. Оператор обрабатывает обезличенные данные о Пользователе в
+            случае, если это разрешено в настройках браузера Пользователя
+            (включено сохранение файлов «cookie» и использование технологии
+            JavaScript).
+          </li>
+        </ol>
+
+        <h3 class="priv-policy__subtitle">
+          6. Порядок сбора, хранения, передачи и других видов обработки
+          персональных данных
+        </h3>
+
+        <p class="priv-policy__text">
+          Безопасность персональных данных, которые обрабатываются Оператором,
+          обеспечивается путем реализации правовых, организационных и
+          технических мер, необходимых для выполнения в полном объеме требований
+          действующего законодательства в области защиты персональных данных.
+        </p>
+
+        <ol class="priv-policy__list">
+          <li class="priv-policy__item">
+            1. Оператор обеспечивает сохранность персональных данных и принимает
+            все возможные меры, исключающие доступ к персональным данным
+            неуполномоченных лиц.
+          </li>
+          <li class="priv-policy__item">
+            2. Персональные данные Пользователя никогда, ни при каких условиях
+            не будут переданы третьим лицам, за исключением случаев, связанных с
+            исполнением действующего законодательства.
+          </li>
+          <li class="priv-policy__item">
+            3. Срок обработки персональных данных является неограниченным.
+            Пользователь может в любой момент отозвать свое согласие на
+            обработку персональных данных, направив Оператору уведомление
+            посредством электронной почты на электронный адрес Оператора с
+            пометкой «Отзыв согласия на обработку персональных данных».
+          </li>
+        </ol>
+
+        <h3 class="priv-policy__subtitle">
+          7. Трансграничная передача персональных данных
+        </h3>
+
+        <ol class="priv-policy__list">
+          <li class="priv-policy__item">
+            1. Оператор до начала осуществления трансграничной передачи
+            персональных данных обязан убедиться в том, что иностранным
+            государством, на территорию которого предполагается осуществлять
+            передачу персональных данных, обеспечивается надежная защита прав
+            субъектов персональных данных.
+          </li>
+          <li class="priv-policy__item">
+            2. Трансграничная передача персональных данных на территории
+            иностранных государств, не отвечающих вышеуказанным требованиям,
+            может осуществляться только в случае наличия согласия в письменной
+            форме субъекта персональных данных на трансграничную передачу его
+            персональных данных и/или исполнения договора, стороной которого
+            является субъект персональных данных.
+          </li>
+        </ol>
+
+        <h3 class="priv-policy__subtitle">8. Заключительные положения</h3>
+
+        <ol class="priv-policy__list">
+          <li class="priv-policy__item">
+            1. Пользователь может получить любые разъяснения по интересующим
+            вопросам, касающимся обработки его персональных данных, обратившись
+            к Оператору по телефону, указанному на сайте.
+          </li>
+          <li class="priv-policy__item">
+            2. В данном документе будут отражены любые изменения политики
+            обработки персональных данных Оператором. Политика действует
+            бессрочно до замены ее новой версией.
+          </li>
+          <li class="priv-policy__item">
+            3. Актуальная версия Политики в свободном доступе расположена в сети
+            Интернет на сайте.
+          </li>
+        </ol>
+        <button
+          data-modal-close=""
+          class="modal__close"
+          title="Закрыть"
+        ></button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+.footer {
+  min-height: 132px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  background-color: white;
+  position: relative;
+  z-index: 5;
+
+  @media (max-width: 575px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  align-items: center;
+
+  @media (max-width: 1710px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  @media (max-width: 575px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.footer__logo {
+  @media (max-width: 1710px) {
+    order: 1;
+  }
+}
+
+.footer__center-box {
+  @include max-width(1080px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 1710px) {
+    max-width: 1148px;
+    flex-wrap: wrap;
+    order: 3;
+  }
+
+  @media (max-width: 767px) {
+    gap: 30px;
+  }
+
+  @media (max-width: 575px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.footer__name {
+  font-size: 14px;
+  margin-bottom: 5px;
+
+  @media (max-width: 575px) {
+    text-align: center;
+  }
+}
+
+.footer__address {
+  font-size: 14px;
+  margin-bottom: 5px;
+
+  @media (max-width: 575px) {
+    text-align: center;
+  }
+}
+
+.footer__policy {
+  @include reset-btn;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    order: 3;
+  }
+}
+
+.footer__social {
+  width: 49px;
+  height: 49px;
+  @include bg;
+
+  &:first-child {
+    background-image: url('/src/img/vk.png');
+  }
+
+  &:last-child {
+    background-image: url('/src/img/insta.png');
+  }
+}
+
+.footer__franch {
+  text-align: right;
+  font-size: 14px;
+  line-height: 25px;
+  color: #767676;
+
+  @media (max-width: 575px) {
+    text-align: center;
+  }
+
+  &:hover,
+  &:focus {
+    color: #767676;
+  }
+}
+
+.footer__contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media (max-width: 1710px) {
+    order: 2;
+  }
+
+  @media (max-width: 575px) {
+    align-items: center;
+  }
+}
+
+.footer__phone {
+  color: #e33b4e;
+  font-size: 31.5px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  line-height: 29px;
+
+  &:hover,
+  &:focus {
+    color: #e33b4e;
+  }
+}
+
+.footer__callback {
+  @include reset-btn;
+  text-decoration: underline;
+  font-size: 14px;
+}

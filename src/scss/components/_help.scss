@@ -1,0 +1,130 @@
+.help {
+  min-height: 968px;
+  background-color: #eeeeee;
+  background-image: url('/src/img/bgs/key-cloud-bg.png'),
+    url('/src/img/bgs/help-bg.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, center center;
+  background-size: auto, cover;
+  padding-top: 65px;
+  padding-bottom: 30px;
+
+  @media (max-width: 1200px) {
+    background-image: none;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+}
+
+.help__title {
+  @include max-width(950px);
+  font-size: 51.5px;
+  font-weight: 600;
+  color: $blue;
+  margin-bottom: 30px;
+  position: relative;
+
+  &::after {
+    content: url('/src/img/8.jpg');
+    position: absolute;
+    top: 50%;
+    transform: translateY(-48%);
+    right: -197px;
+
+    @media (max-width: 1200px) {
+      content: none;
+    }
+  }
+
+  @media (max-width: 991px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  span {
+    color: $red;
+  }
+}
+
+.help__note {
+  background: rgb(1, 38, 119);
+  background: linear-gradient(
+    54deg,
+    rgba(1, 38, 119, 1) 39%,
+    rgba(226, 38, 61, 1) 57%
+  );
+  border-radius: 10px;
+  box-shadow: 0 0 52px 13px rgba(25, 26, 28, 0.06);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 22px;
+  padding-right: 112px;
+  font-size: 22px;
+  line-height: 40px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+
+  @media (max-width: 991px) {
+    padding-right: 20px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.help__list {
+  @include reset-list;
+}
+
+.help__item {
+  font-size: 20px;
+  line-height: 32px;
+  padding-left: 21px;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 4px solid #dedede;
+
+  @media (max-width: 575px) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-color: #e2263d;
+    width: 10px;
+    height: 10px;
+    left: 0px;
+    top: 26px;
+    border-radius: 50%;
+  }
+
+  &:nth-child(2) {
+    padding-right: 268px;
+    @media (max-width: 1200px) {
+      padding-right: 0;
+    }
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}

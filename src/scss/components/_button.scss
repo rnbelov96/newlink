@@ -1,0 +1,137 @@
+.button {
+  @include reset-btn;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 33px;
+  padding-right: 151px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+  background: #ffd800;
+  box-shadow: 0px 7px 0px #bf8f00, 3.5px 6.1px 15.5px 2.5px rgba(25, 26, 28, 0.2);
+  border-radius: 10px;
+  width: 100%;
+  min-height: 103px;
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    background: #d4b501;
+  }
+
+  &:active {
+    background: #d4b501;
+    top: 7px;
+    box-shadow: none;
+  }
+
+  &_without-img {
+    padding-right: 30px;
+    text-align: center;
+
+    @media (max-width: 575px) {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  &_city {
+    min-height: 83px;
+  }
+
+  &_line-form {
+    @include max-width(301px);
+
+    @media (max-width: 575px) {
+      padding-right: 10px;
+      padding-left: 10px;
+      text-align: center;
+    }
+  }
+
+  &_modal-form {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  &_materials {
+    display: none;
+
+    @media (max-width: 575px) {
+      display: block;
+      @include max-width(301px);
+      margin-left: auto;
+      margin-right: auto;
+      min-height: 85px;
+      margin-bottom: 35px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+    }
+  }
+
+  &::after {
+    content: '';
+    margin-left: 60px;
+    width: 25px;
+    height: 300px;
+    background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(#fff),
+      to(hsla(0, 0%, 100%, 0.01))
+    );
+    background: linear-gradient(0deg, #fff, hsla(0, 0%, 100%, 0.01));
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+    position: absolute;
+    left: -90px;
+    top: -150px;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-animation-name: slideme;
+    animation-name: slideme;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 0;
+  }
+
+  @-webkit-keyframes slideme {
+    0% {
+      left: -30px;
+      margin-left: 0;
+    }
+
+    30%,
+    to {
+      left: 110%;
+      margin-left: 80px;
+    }
+  }
+
+  @keyframes slideme {
+    0% {
+      left: -30px;
+      margin-left: 0;
+    }
+
+    30%,
+    to {
+      left: 110%;
+      margin-left: 80px;
+    }
+  }
+}

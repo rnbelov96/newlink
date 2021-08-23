@@ -1,0 +1,96 @@
+.math {
+  min-height: 716px;
+  @include bg;
+  background-image: url('/src/img/bgs/math-bg.jpg');
+  padding-top: 45px;
+  padding-bottom: 30px;
+
+  @media (max-width: 991px) {
+    padding-top: 30px;
+    min-height: auto;
+    background-image: none;
+  }
+}
+
+.math__title {
+  font-size: 51.5px;
+  color: $blue;
+  margin-bottom: 85px;
+  font-weight: 600;
+
+  span {
+    color: $red;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 40px;
+    margin-bottom: 40px;  
+  }
+
+  @media (max-width: 767px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 25px;
+  }
+}
+
+.math__list {
+  display: flex;
+  @include reset-list;
+  @include max-width(830px);
+  margin-left: 28px;
+  flex-wrap: wrap;
+  gap: 70px;
+
+  @media (max-width: 767px) {
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+
+.math__item-img {
+  margin-bottom: 25px;
+
+  @media (max-width: 767px) {
+    display: block;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.math__item-text {
+  margin-bottom: 20px;
+  font-size: 20px;
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+}
+
+.math__item-number {
+  font-size: 22px;
+  color: $blue;
+  margin-bottom: 0;
+
+  b {
+    font-weight: 500;
+  }
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 19px;
+  }
+}

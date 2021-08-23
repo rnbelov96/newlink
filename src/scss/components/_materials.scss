@@ -1,0 +1,238 @@
+.materials {
+  padding-top: 58px;
+  padding-bottom: 25px;
+
+  @media (max-width: 991px) {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+}
+
+.materials__title {
+  @include max-width(965px);
+  font-size: 51.5px;
+  font-weight: 600;
+  color: $blue;
+  margin-bottom: 40px;
+  position: relative;
+
+  &::after {
+    content: url('/src/img/9.png');
+    position: absolute;
+    top: 50%;
+    transform: translateY(-42%);
+    right: -179px;
+
+    @media (max-width: 1200px) {
+      content: none;
+    }
+  }
+
+  @media (max-width: 991px) {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  span {
+    color: $red;
+  }
+}
+
+.materials__note {
+  background: rgb(1, 38, 119);
+  background: linear-gradient(
+    54deg,
+    rgba(1, 38, 119, 1) 39%,
+    rgba(226, 38, 61, 1) 57%
+  );
+  border-radius: 10px;
+  box-shadow: 0 0 52px 13px rgba(25, 26, 28, 0.06);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 22px;
+  padding-right: 64px;
+  font-size: 22px;
+  line-height: 40px;
+  color: white;
+  margin-bottom: 50px;
+  font-weight: 500;
+
+  @media (max-width: 991px) {
+    padding-right: 20px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.materials__list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 42px;
+  margin-bottom: 50px;
+}
+
+.materials__item {
+  padding-top: 240px;
+  position: relative;
+  @include max-width(255px);
+
+  @media (max-width: 910px) {
+    padding-top: 200px;
+  }
+
+  @media (max-width: 610px) {
+    max-width: 100%;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+  }
+
+  &:nth-child(1) {
+    &::before {
+      content: url('/src/img/icons/materials/1.png');
+      left: 24px;
+      top: 0px;
+      @media (max-width: 610px) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &::after {
+      content: '';
+      opacity: 0.32;
+      border-radius: 1.5px;
+      background-color: #072b79;
+      width: 86px;
+      height: 3px;
+      top: 83px;
+      right: -19px;
+
+      @media (max-width: 1200px) {
+        content: none;
+      }
+    }
+  }
+  &:nth-child(2) {
+    &::before {
+      content: url('/src/img/icons/materials/2.png');
+      left: 24px;
+      top: 26px;
+      @media (max-width: 610px) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &::after {
+      content: '';
+      opacity: 0.32;
+      border-radius: 1.5px;
+      background-color: #072b79;
+      width: 86px;
+      height: 3px;
+      top: 83px;
+      right: -80px;
+
+      @media (max-width: 1200px) {
+        content: none;
+      }
+    }
+  }
+  &:nth-child(3) {
+    &::before {
+      content: url('/src/img/icons/materials/3.png');
+      left: 80px;
+      top: 0px;
+      @media (max-width: 610px) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &::after {
+      content: '';
+      opacity: 0.32;
+      border-radius: 1.5px;
+      background-color: #072b79;
+      width: 86px;
+      height: 3px;
+      top: 83px;
+      right: -60px;
+
+      @media (max-width: 1200px) {
+        content: none;
+      }
+    }
+  }
+  &:nth-child(4) {
+    &::before {
+      content: url('/src/img/icons/materials/4.png');
+      left: 73px;
+      top: 0px;
+      @media (max-width: 610px) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+.materials__item-text {
+  padding-left: 24px;
+  font-size: 19px;
+  line-height: 32px;
+  position: relative;
+  margin-bottom: 0;
+
+  @media (max-width: 575px) {
+    font-size: 17px;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(
+      54deg,
+      rgba(1, 38, 119, 1) 22%,
+      rgba(226, 38, 61, 1) 78%
+    );
+    border-radius: 50%;
+    top: 10px;
+    left: 5px;
+  }
+}
+
+.materials__text {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 22px;
+  color: $blue;
+
+  @media (max-width: 575px) {
+    font-size: 19px;
+  }
+}

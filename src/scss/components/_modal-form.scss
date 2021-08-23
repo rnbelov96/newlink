@@ -1,0 +1,100 @@
+.modal-form {
+  border-radius: 10px;
+  box-shadow: 0 0 52px 13px rgba(25, 26, 28, 0.13);
+  background-color: #fdfdfd;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  @include max-width(505px);
+  width: 98%;
+
+  @media (max-width: 575px) {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+.modal-form__title {
+  font-size: 22px;
+  margin-bottom: 29px;
+  font-weight: normal;
+  text-align: center;
+
+  @media (max-width: 575px) {
+    font-size: 18px;
+  }
+}
+
+.modal-form__input-list {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-form__input {
+  font-size: 19px;
+  color: #c2c2c2;
+  border-radius: 10px;
+  border: solid 2px #e3e3e3;
+  background-color: #fdfdfd;
+  padding-left: 28px;
+  padding-right: 10px;
+  width: 100%;
+  min-height: 65px;
+
+  &:hover,
+  &:focus {
+    color: black;
+    border: solid 2px black;
+    outline: none;
+
+    &::-webkit-input-placeholder {
+      color: black;
+    }
+
+    &::-moz-placeholder {
+      color: black;
+    }
+
+    &:-ms-input-placeholder {
+      color: black;
+    }
+
+    &:-moz-placeholder {
+      color: black;
+    }
+  }
+
+  &::-webkit-input-placeholder {
+    color: #c2c2c2;
+  }
+
+  &::-moz-placeholder {
+    color: #c2c2c2;
+  }
+
+  &:-ms-input-placeholder {
+    color: #c2c2c2;
+  }
+
+  &:-moz-placeholder {
+    color: #c2c2c2;
+  }
+}
+
+.modal-form__btn-box {
+  width: 100%;
+}
+
+.modal-form__book-img {
+  position: absolute;
+  right: 8px;
+  top: -15px;
+  pointer-events: none;
+
+  @media (max-width: 575px) {
+    display: none;
+  }
+}
