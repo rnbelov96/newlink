@@ -23,10 +23,10 @@ let litleCurrentStep = 2;
 let bigCurrentStep = 2;
 
 const calcResult = () => {
-  result = (Number(singleRange.value) * 5000
-      + Number(litleRange.value) * 5000
-      + Number(bigRange.value) * 8500)
-    * 0.5;
+  result = (Number(singleRange.value) * 800
+      + Number(litleRange.value) * 2200
+      + Number(bigRange.value) * 2500)
+    * 0.2;
   resultLabelEl.textContent = result.toLocaleString();
   return result;
 };
