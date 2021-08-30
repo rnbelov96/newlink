@@ -63,6 +63,7 @@
   display: flex;
   gap: 17px;
   align-items: flex-end;
+  margin-bottom: 30px;
 
   &_secrets {
     position: relative;
@@ -149,5 +150,22 @@
 
   @media (max-width: 575px) {
     display: none;
+  }
+}
+
+.line-form__policy {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  color: #8c8c8c;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+
+  button {
+    @include reset-btn;
+    color: #8c8c8c;
+    text-decoration: underline;
+    font-weight: 300;
   }
 }

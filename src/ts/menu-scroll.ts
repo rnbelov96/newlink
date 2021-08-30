@@ -140,3 +140,17 @@ const menuClickHandler = (e: Event) => {
 menuList.forEach(menu => {
   menu?.addEventListener('click', menuClickHandler);
 });
+
+const callbackBtnEl = document.querySelector('.callback') as HTMLButtonElement;
+
+window.addEventListener('scroll', () => {
+  if (
+    document.documentElement.clientHeight + pageYOffset >
+    document.querySelector('body > footer').offsetTop
+  ) {
+    callbackBtnEl.classList.add('visually-hidden');
+    return;
+  }
+
+  callbackBtnEl.classList.remove('visually-hidden');
+});
